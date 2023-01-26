@@ -1,0 +1,19 @@
+.card {
+  background-color: var(--secondary-background);
+  width: 60rem;
+  min-height: 40rem;
+  max-width: 90%;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

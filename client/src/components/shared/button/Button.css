@@ -1,0 +1,21 @@
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: max-content;
+  margin: 0 auto;
+  background-color: var(--primary-500);
+  color: var(--primary-text);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primary-600);
+}

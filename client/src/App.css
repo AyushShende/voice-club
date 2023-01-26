@@ -1,0 +1,28 @@
+:root {
+  --bodyFont: 'Nunito', sans-serif;
+
+  --primary-background: #121212;
+  --secondary-background: #1d1d1d;
+  --primary-text: #fff;
+  --secondary-text: #C4C5C5;
+  --primary-500: #0077FF;
+  --primary-600: #0057BB;
+}
+
+body {
+  font-family: var(--bodyFont);
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.heading__primary {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}

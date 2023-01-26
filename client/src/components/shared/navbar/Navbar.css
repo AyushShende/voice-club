@@ -1,0 +1,15 @@
+.nav {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  padding: 2rem 0;
+  /* background-color: aqua; */
+
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
