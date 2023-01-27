@@ -1,0 +1,28 @@
+.btn__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab__btn {
+  background-color: var(--secondary-background);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.active__btn {
+  background-color: var(--primary-500);
+}
+
+.card__bottom-text {
+  font-size: 1.6rem;
+  color: var(--secondary-text);
+  width: 70%;
+}

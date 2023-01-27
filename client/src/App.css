@@ -3,6 +3,7 @@
 
   --primary-background: #121212;
   --secondary-background: #1d1d1d;
+  --tertiary-background: #262626;
   --primary-text: #fff;
   --secondary-text: #C4C5C5;
   --primary-500: #0077FF;
@@ -22,7 +23,14 @@ body {
 }
 
 .heading__primary {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.card__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
 }

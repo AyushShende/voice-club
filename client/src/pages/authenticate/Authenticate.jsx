@@ -1,4 +1,3 @@
-import './Login.css';
 import StepEmailPhone from '../steps/stepEmailPhone/StepEmailPhone';
 import StepOtp from '../steps/stepOtp/StepOtp';
 import { useState } from 'react';
@@ -6,7 +5,7 @@ const steps = {
   1: StepEmailPhone,
   2: StepOtp,
 };
-const Login = () => {
+const Authenticate = () => {
   const [step, setStep] = useState(1);
   const CurrentStep = steps[step];
 
@@ -20,4 +19,4 @@ const Login = () => {
     </div>
   );
 };
-export default Login;
+export default Authenticate;

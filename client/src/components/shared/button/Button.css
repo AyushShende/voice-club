@@ -1,10 +1,10 @@
 .btn {
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-radius: 10rem;
   cursor: pointer;
   outline: none;
   border: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   max-width: max-content;
   margin: 0 auto;

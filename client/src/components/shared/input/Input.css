@@ -1,0 +1,10 @@
+.input {
+  border: none;
+  outline: none;
+  padding: 1.5rem 2rem;
+  background-color: var(--tertiary-background);
+  width: 30rem;
+  font-size: 1.8rem;
+  color: var(--primary-text);
+  border-radius: 1rem;
+}
