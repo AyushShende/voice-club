@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components';
+import { Navbar, Loader } from './components';
 import './App.css';
 import {
   Authenticate,
@@ -11,17 +11,20 @@ import {
   ProtectedRoute,
 } from './pages';
 
+import useRefresh from './hooks/useRefresh';
+
 const App = () => {
-  const isLoggedIn = false;
-  const isActive = false;
-  return (
+  const { loading } = useRefresh();
+  return loading ? (
+    <Loader message="Loading, please wait" />
+  ) : (
     <Router>
       <Navbar />
       <Routes>
         <Route
           path="/"
           element={
-            <GuestRoute isLoggedIn={isLoggedIn} isActive={isActive}>
+            <GuestRoute>
               <Home />
             </GuestRoute>
           }
@@ -29,7 +32,7 @@ const App = () => {
         <Route
           path="/authenticate"
           element={
-            <GuestRoute isLoggedIn={isLoggedIn} isActive={isActive}>
+            <GuestRoute>
               <Authenticate />
             </GuestRoute>
           }
@@ -37,7 +40,7 @@ const App = () => {
         <Route
           path="/activate"
           element={
-            <SemiProtectedRoute isLoggedIn={isLoggedIn} isActive={isActive}>
+            <SemiProtectedRoute>
               <Activate />
             </SemiProtectedRoute>
           }
@@ -45,7 +48,7 @@ const App = () => {
         <Route
           path="/rooms"
           element={
-            <ProtectedRoute isLoggedIn={isLoggedIn} isActive={isActive}>
+            <ProtectedRoute>
               <Rooms />
             </ProtectedRoute>
           }

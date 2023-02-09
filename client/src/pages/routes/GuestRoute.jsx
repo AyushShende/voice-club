@@ -1,6 +1,7 @@
 import { Navigate } from 'react-router-dom';
-
-const GuestRoute = ({ children, isLoggedIn }) => {
+import { useSelector } from 'react-redux';
+const GuestRoute = ({ children }) => {
+  const { isLoggedIn } = useSelector((state) => state.auth);
   if (isLoggedIn) {
     return <Navigate to="/rooms" />;
   }

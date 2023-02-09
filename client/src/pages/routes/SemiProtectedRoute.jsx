@@ -1,10 +1,13 @@
+import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 
-const SemiProtectedRoute = ({ children, isLoggedIn, isActive }) => {
+const SemiProtectedRoute = ({ children }) => {
+  const { isLoggedIn, user } = useSelector((state) => state.auth);
+
   if (!isLoggedIn) {
     return <Navigate to="/" />;
   }
-  if (isLoggedIn && isActive) {
+  if (isLoggedIn && user.activated) {
     return <Navigate to="/rooms" />;
   }
   return children;

@@ -3,7 +3,7 @@ import Card from '../../components/shared/card/Card';
 import Logo from '../../assets/logo.png';
 import './Home.css';
 
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();

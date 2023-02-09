@@ -1,0 +1,19 @@
+.avatar__wrapper {
+  width: 11rem;
+  height: 11rem;
+  border: 6px solid var(--primary-500);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar__input {
+  display: none;
+}
+
+.avatar__label {
+  cursor: pointer;
+  color: var(--primary-500);
+}
